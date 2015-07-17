@@ -1,0 +1,21 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\ble_bas_c.o"
+".\objects\ble_hrs_c.o"
+".\objects\app_button.o"
+".\objects\app_gpiote.o"
+".\objects\app_timer.o"
+".\objects\app_trace.o"
+".\objects\ble_db_discovery.o"
+".\objects\ble_debug_assert_handler.o"
+".\objects\device_manager_central.o"
+".\objects\nrf6350.o"
+".\objects\pstorage.o"
+".\objects\simple_uart.o"
+".\objects\softdevice_handler.o"
+".\objects\twi_hw_master.o"
+".\objects\arm_startup_nrf51.o"
+".\objects\system_nrf51.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ringa.map" -o .\Objects\ringa.axf
